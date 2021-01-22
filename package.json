@@ -29,7 +29,9 @@
     "build": "vuepress build example",
     "dev": "nodemon --ext md,vue --watch ../ --watch . --exec vuepress dev example",
     "lint": "eslint --ext .js,.vue src",
-    "prepublishOnly": "npm run build && conventional-changelog -p angular -r 2 -i CHANGELOG.md -s"
+    "prepublishOnly": "npm run build && conventional-changelog -p angular -r 2 -i CHANGELOG.md -s", 
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "husky": {
     "hooks": {
