@@ -8,7 +8,7 @@ title: Create a modern vuepress blog in 5 minutes!
 description: Create a modern vuepress blog in 5 minutes!
 author: Ahmad Mostafa
 location: Irbid-Jordan
-image: https://i.picsum.photos/id/100/800/600.jpg
+image: https://picsum.photos/id/237/100/100
 meta:
   - name: title
     content: Create a modern vuepress blog in 5 minutes!

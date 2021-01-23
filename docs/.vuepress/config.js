@@ -63,9 +63,9 @@ module.exports = {
     },
     disqus: 'disquswebsiteshortname', // if you want to incorporate Disqus for comments replace this value else just get rid of it
     about: {
-      fullName: 'Ahmad Mostafa',
-      bio: 'I am a passionate Software Engineer, I love Vue.js ♥ ...',
-      image: 'https://www.ahmadmostafa.com/images/bg_1.png',
+      fullName: 'Dudi Milanovic',
+      bio: 'I love Vue.js, but I also ♥ sailing...',
+      image: '/dudi2.jpg',
     },
     footer: {
       contact: [

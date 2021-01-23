@@ -4,18 +4,18 @@ slug: vuepress-modern-blog-theme
 tags:
 - vue.js
 - javascript
-title: Create a modern vuepress blog in 5 minutes!
-description: Create a modern vuepress blog in 5 minutes!
+title: Create a modern vuepress blog in 2 minutes!
+description: Create a modern vuepress blog in 2 minutes!
 author: Ahmad Mostafa
 location: Irbid-Jordan
-image: https://i.picsum.photos/id/90/800/600.jpg
+image: /dudi2.jpg
 meta:
   - name: title
-    content: Create a modern vuepress blog in 5 minutes!
+    content: Create a modern vuepress blog in 2 minutes!
   - name: description
     content: create a modern vuepress blog
   - name: keywords
-    content: Ahmad Mostafa, Vuepress, Vue.js, Vuepress website, vuepress blog, vuepress theme, vuepress blog theme, vue blog, create vuepress blog, blog theme, create a blog
+    content: Dudi jedrenje blas bla
   - name: author
     content: Ahmad Mostafa
   - name: language
@@ -38,11 +38,11 @@ yarn create vuepress
 
 Now you will be prompted to choose what boilerplate you want to go with, let's select blog
 
-![image](/images/vuepress-modern-blog-theme/2.png)
+![image](../assets/dudi1.jpg)
 
 After that you will be prompted for some basic info.
 
-![image](/images/vuepress-modern-blog-theme/3.jpg)
+![image](./assets/dudi2.jpg)
 
 then, let's open the project with a good code editor (Visual Studio Code :wink:)
 
