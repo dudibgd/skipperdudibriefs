@@ -17,8 +17,8 @@ module.exports = {
         icon: 'el-icon-house'
       },
       {
-        text: "Projects",
-        link: "/projects/",
+        text: "Exercises",
+        link: "/exercises/",
         icon: "el-icon-folder"
       },
       // Add more
@@ -86,6 +86,7 @@ For now `ContactType` supports following enums:
 
 - github
 - facebook
+- timeMachine
 - twitter
 - instagram
 - linkedin

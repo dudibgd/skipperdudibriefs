@@ -7,33 +7,33 @@
         class="py-3"
       >
         <el-col
-          v-for="project in projects"
-          :key="project.name"
+          v-for="exercise in exercises"
+          :key="exercise.name"
           :sm="24"
           :md="12"
         >
-          <el-card class="card project-card zoomIn">
-            <router-link :to="project.regularPath">
-              <div class="project-card-header">
-                <div class="project-icon">
+          <el-card class="card exercise-card zoomIn">
+            <router-link :to="exercise.regularPath">
+              <div class="exercise-card-header">
+                <div class="exercise-icon">
                   <i class="el-icon-folder" />
                 </div>
-                <div class="project-card--links">
+                <div class="exercise-card--links">
                   <el-link
-                    v-if="project.frontmatter.github"
+                    v-if="exercise.frontmatter.github"
                     :underline="false"
                     class="p-2"
-                    :href="project.frontmatter.github"
+                    :href="exercise.frontmatter.github"
                     target="_blank"
                   >
                     <GithubIcon />
                   </el-link>
 
                   <el-link
-                    v-if="project.frontmatter.link"
+                    v-if="exercise.frontmatter.link"
                     :underline="false"
                     class="p-2"
-                    :href="project.frontmatter.link"
+                    :href="exercise.frontmatter.link"
                     target="_blank"
                   >
                     <LinkIcon />
@@ -41,13 +41,13 @@
                 </div>
               </div>
               <div>
-                <h4>{{ project.frontmatter.title || project.title }}</h4>
-                <p class="project-description">
-                  {{ project.frontmatter.description }}
+                <h4>{{ exercise.frontmatter.title || exercise.title }}</h4>
+                <p class="exercise-description">
+                  {{ exercise.frontmatter.description }}
                 </p>
                 <ul class="languages-list">
                   <li
-                    v-for="lang in project.frontmatter.languages"
+                    v-for="lang in exercise.frontmatter.languages"
                     :key="lang"
                   >
                     {{ lang }}
@@ -74,7 +74,7 @@ export default {
     LinkIcon,
   },
   computed: {
-    projects () {
+    exercises () {
       return this.$pagination._matchedPages
     },
   },
@@ -88,7 +88,7 @@ export default {
   margin-left: auto !important;
   min-height: 80vh;
 
-  .project-card.card {
+  .exercise-card.card {
     margin: .5rem;
     background: linear-gradient(45deg, darken($accentColor, 30%), darken($accentColor, 70%));
     color: lighten($accentColor, 80%);
@@ -104,7 +104,7 @@ export default {
       box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
     }
 
-    .project-card--links a {
+    .exercise-card--links a {
       color: $accentColor;
 
       &:hover {
@@ -112,13 +112,13 @@ export default {
       }
     }
 
-    .project-card-header {
+    .exercise-card-header {
       display: flex;
       margin-bottom: 1rem;
       justify-content: space-between;
       align-items: center;
 
-      .project-icon {
+      .exercise-icon {
         font-size: 3em;
         position: relative;
         top: 0.3rem;
@@ -126,7 +126,7 @@ export default {
       }
     }
 
-    p.project-description {
+    p.exercise-description {
       color: lighten($accentColor, 60%);
       margin: 1.5rem auto;
     }

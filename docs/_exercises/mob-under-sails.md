@@ -1,5 +1,5 @@
 ---
-title: third-demo-project
+title: MOB under sails
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium hic nemo voluptatum.
 link: https://vuepress.vuejs.org/
 github: https://github.com/vuejs/vuepress/

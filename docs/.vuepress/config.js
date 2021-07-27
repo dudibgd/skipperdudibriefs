@@ -50,8 +50,8 @@ module.exports = {
         icon: 'el-icon-house',
       },
       {
-        text: 'Projects',
-        link: '/projects/',
+        text: 'Exercises',
+        link: '/exercises/',
         icon: 'el-icon-folder',
       },
     ],
