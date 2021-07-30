@@ -111,7 +111,7 @@ module.exports = {
     'reading-progress',
     '@vuepress/medium-zoom',
     '@vuepress/nprogress',
-    'social-share',
+    // 'social-share',
     '@vuepress/google-analytics',
     [
       '@vuepress/pwa',
@@ -123,7 +123,7 @@ module.exports = {
     [
       'sitemap',
       {
-        hostname: 'https://vp-modern.z3by.com',
+        hostname: 'https://skipperdudibriefs.netlify.app',
       },
     ],
   ],

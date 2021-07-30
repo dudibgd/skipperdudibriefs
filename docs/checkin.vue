@@ -1,29 +1,35 @@
 
 <template>
-  <div>
-    <h2>CEKIRANJE</h2>
+  <div class="mainDiv">
+    <h2 class="mb">CEKIRANJE</h2>
 
-    <h3>Savet: iskljuciti odmah jedan tank vode (imati u rezervi)</h3>
+    <h3 class="mb">Savet: iskljuciti odmah jedan tank vode (imati u rezervi)</h3>
 
     <div>
       <h3>Oko gostiju</h3>
-      <li v-for="listGost in listGosti" :key="listGost.id" >
-        {{listGost.naziv}}
-      </li>
+      <ul class="list">
+        <li v-for="listGost in listGosti" :key="listGost.id" >
+          {{listGost.naziv}}
+        </li>
+      </ul>
     </div>
 
     <div>
       <h3>Oko dokumenata</h3>
-      <li v-for="listDokument in listDokumenta" :key="listDokument.id">
-        {{listDokument.naziv}}
-      </li>
+      <ul class="list">
+        <li v-for="listDokument in listDokumenta" :key="listDokument.id">
+          {{listDokument.naziv}}
+        </li>
+      </ul>
     </div>
 
-    <div>
+    <div id="last">
       <h3>Oko broda</h3>
-      <li v-for="listb in listBrod" :key="listb.id">
-        {{listb.naziv}}
-      </li>
+      <ul class="list">
+        <li v-for="listb in listBrod" :key="listb.id">
+          {{listb.naziv}}
+        </li>
+      </ul>
     </div>
 
 
@@ -63,3 +69,32 @@ export default {
 }
 </script>
 
+<style scoped>
+.mb{
+  margin-bottom: 3rem;
+}
+
+.mainDiv{
+  background-color: #7eb4e2;
+  font: 200;
+  color: bisque;
+}
+
+ul {
+  list-style-type: "*";
+  margin-bottom: 2rem;
+}
+
+ul li {
+  list-style: none;
+  position: relative;
+  padding: 3px 0 2px 25px;
+}
+
+ul li::before {
+  content: '*';
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+</style>

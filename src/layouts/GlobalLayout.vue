@@ -3,9 +3,9 @@
     <Header />
     <DefaultGlobalLayout />
     <Footer />
-    <ClientOnly v-if="$themeConfig.cookies">
+    <!-- <ClientOnly v-if="$themeConfig.cookies">
       <cookie-law v-bind="$themeConfig.cookies" />
-    </ClientOnly>
+    </ClientOnly> -->
   </div>
 </template>
 
