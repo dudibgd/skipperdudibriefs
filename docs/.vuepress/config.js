@@ -1,12 +1,12 @@
 module.exports = {
-  title: 'VuePress Blog Example',
-  description: 'This is a blog example built by VuePress',
+  title: 'Skipper Dudi briefs',
+  description: 'These are some major introduction security and safety briefs for the new guest crew',
   theme: require.resolve('../../'), // replace it with ==> theme: 'modern-blog' to use this example project as a boilerplate.
   summaryLength: 700,
   themeConfig: {
     translations: {
-      read_more: 'Keep reading!',
-      read_this_post: 'Read this post now!',
+      read_more: 'Ostali saveti:',
+      read_this_post: 'Pogledaj',
     },
 
     // cookies: {
@@ -45,13 +45,19 @@ module.exports = {
     */
     nav: [
       {
-        text: 'Home',
+        text: 'Briefs',
         link: '/',
         icon: 'el-icon-house',
       },
       {
         text: 'Exercises',
         link: '/exercises/',
+        icon: 'el-icon-folder',
+      },
+
+      {
+        text: 'Check in',
+        link: '/checkin/',
         icon: 'el-icon-folder',
       },
     ],
@@ -64,27 +70,27 @@ module.exports = {
     disqus: 'disquswebsiteshortname', // if you want to incorporate Disqus for comments replace this value else just get rid of it
     about: {
       fullName: 'Dudi Milanovic',
-      bio: 'I love Vue.js, but I also ♥ sailing...',
+      bio: 'I ♥ sailing',
       image: '/dudi2.jpg',
     },
     footer: {
       contact: [
-        {
-          type: 'github',
-          link: 'https://github.com/z3by',
-        },
+        // {
+        //   type: 'github',
+        //   link: 'https://github.com/z3by',
+        // },
         {
           type: 'instagram',
-          link: 'https://instagram.com',
+          link: 'https://instagram.com/dudi_milanovic',
         },
         {
           type: 'linkedin',
-          link: 'https://linkedin.com',
+          link: 'https://www.linkedin.com/in/dudimilanovic/',
         },
-        {
-          type: 'twitter',
-          link: 'https://twitter.com',
-        },
+        // {
+        //   type: 'twitter',
+        //   link: 'https://twitter.com',
+        // },
       ],
       copyright: [
         {
@@ -92,7 +98,7 @@ module.exports = {
           link: 'https://policies.google.com/privacy?hl=en-US',
         },
         {
-          text: 'MIT Licensed | Copyright © 2018-present Vue.js',
+          text: 'Copyright ©skipperdudi 2021',
           link: '',
         },
       ],

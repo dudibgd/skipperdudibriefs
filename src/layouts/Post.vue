@@ -15,7 +15,7 @@
           >
           <div class="p-3">
             <h1 align="center">
-              {{ $frontmatter.title }}
+              {{ $frontmatter.title }} 
             </h1>
             <PostInfo
               :date="$frontmatter.date"
@@ -26,25 +26,25 @@
           </div>
         </el-card>
 
-        <el-card
+        <!-- <el-card
           v-if="$themeConfig.posts && $themeConfig.posts.prepend && $themeConfig.posts.prepend.length > 0"
           class="py-3 px-3 mb-4"
-        >
+        > -->
           <!-- eslint-disable-next-line -->
-          <span v-html="$themeConfig.posts.prepend" />
-        </el-card>
+          <!-- <span v-html="$themeConfig.posts.prepend" />
+        </el-card> -->
 
         <el-card class="py-3 px-3 mb-4">
           <Content />
         </el-card>
 
-        <el-card
+        <!-- <el-card
           v-if="$themeConfig.posts && $themeConfig.posts.append && $themeConfig.posts.append.length > 0"
           class="py-3 px-3 mb-4"
-        >
+        > -->
           <!-- eslint-disable-next-line -->
-          <span v-html="$themeConfig.posts.append" />
-        </el-card>
+          <!-- <span v-html="$themeConfig.posts.append" />
+        </el-card> -->
 
         <el-card
           v-if="featured_posts.length"
@@ -85,7 +85,7 @@
           </div>
         </el-card>
 
-        <ClientOnly v-if="$themeConfig.disqus">
+        <!-- <ClientOnly v-if="$themeConfig.disqus">
           <el-card class="comments-area my-4">
             <div
               slot="header"
@@ -100,7 +100,7 @@
               class="disqus-comments"
             />
           </el-card>
-        </ClientOnly>
+        </ClientOnly> -->
       </main>
     </transition>
   </div>

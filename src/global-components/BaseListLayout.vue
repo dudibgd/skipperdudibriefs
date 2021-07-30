@@ -9,9 +9,11 @@
         backgroundImage: 'url(' + $withBase($themeConfig.heroImage) + ')'
       }"
     >
+        <!-- backgroundImage: 'url(' + $withBase($themeConfig.heroImage) + ')' -->
+        <!-- backgroundImage: '/dudi2.jpg' -->
       <div class="p-3 text-center text-light">
         <h1 class="display-3">
-          {{ $site.title }}
+          11- {{ $site.title }}
         </h1>
         <p class="font-weight-light h3 text-light">
           {{ $site.description }}
@@ -20,7 +22,7 @@
           href="#posts"
           class="el-button el-button--primary my-3"
         >{{
-          $t("latest_posts")
+          $t("Major briefs")
         }}</a>
       </div>
     </header>
@@ -29,6 +31,7 @@
       <aside class="tags col-md-12 col-lg-3  py-0 py-lg-5">
         <About v-if="$themeConfig.about" />
         <BlogTags :tags="tags" />
+        22
       </aside>
       <div
         id="posts"

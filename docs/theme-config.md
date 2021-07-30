@@ -21,6 +21,12 @@ module.exports = {
         link: "/exercises/",
         icon: "el-icon-folder"
       },
+
+      {
+        text: "Checkin",
+        link: "/checkin/",
+        icon: "el-icon-folder"
+      },
       // Add more
     ],
   },
@@ -254,6 +260,8 @@ then set the layout to `AboutLayout` in page frontmatter.
 ## heroImage
 
 - Type: `string`
+<!-- - Default: `"/public/dudi2.jpg"` -->
+<!-- - Default: `"https://www.imagesource.com/wp-content/uploads/2019/06/Rio.jpg"` -->
 - Default: `"https://source.unsplash.com/random"`
 
 ## disqus
@@ -365,6 +373,8 @@ header image for the post item and the preview image in the list of posts.
 ```markdown
 ---
 image: https://source.unsplash.com/random
+<!-- image: /dudi2.jpg -->
+<!-- image: https://www.imagesource.com/wp-content/uploads/2019/06/Rio.jpg -->
 ---
 ```
 

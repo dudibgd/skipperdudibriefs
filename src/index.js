@@ -9,8 +9,9 @@ module.exports = (themeConfig, ctx) => {
         : 400,
   })
 
-  themeConfig.heroImage =
-    themeConfig.heroImage || 'https://source.unsplash.com/random/800x600'
+  themeConfig.heroImage = 
+    themeConfig.heroImage || 'https://picsum.photos/id/324/200/300'
+    // themeConfig.heroImage || 'https://source.unsplash.com/random/800x600'
 
   const defaultBlogPluginOptions = {
     directories: [
@@ -20,7 +21,7 @@ module.exports = (themeConfig, ctx) => {
         path: '/',
         // layout: 'IndexPost', defaults to `Layout.vue`
         itemLayout: 'Post',
-        frontmatter: { title: 'Home' },
+        frontmatter: { title: 'Briefs' },
         itemPermalink: '/:year/:month/:day/:slug',
         pagination: {
           lengthPerPage: 10,
